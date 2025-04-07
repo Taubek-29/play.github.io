@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="portfolio-style.css">
+</head>
+<body>
+    <div class="portfolio-theme theme-minimal" id="portfolio-theme">
+        <div class="portfolio-header">
+            <div class="portfolio-title">
+                <h1 id="portfolio-name">Иван Иванов</h1>
+                <p id="portfolio-job">Веб-разработчик</p>
+            </div>
+            <div class="theme-selector">
+                <select id="theme-selector">
+                    <option value="minimal">Минимализм</option>
+                    <option value="creative">Креативный</option>
+                    <option value="tech">Технологичный</option>
+                    <option value="elegant">Элегантный</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="portfolio-content">
+            <section class="section about-section">
+                <h2>Обо мне</h2>
+                <p id="about-text">Здесь будет информация о вас...</p>
+            </section>
+            
+            <section class="section skills-section">
+                <h2>Навыки</h2>
+                <div class="skills-list" id="skills-list">
+                    <!-- Навыки будут здесь -->
+                </div>
+            </section>
+            
+            <section class="section projects-section">
+                <h2>Проекты</h2>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Проекты будут здесь -->
+                </div>
+            </section>
+            
+            <section class="section contact-section">
+                <h2>Контакты</h2>
+                <div class="contact-info">
+                    <p>Email: <a href="#" id="contact-email">example@mail.com</a></p>
+                </div>
+            </section>
+        </div>
+        
+        <button class="edit-btn" onclick="window.location.href='index.html'">
+            <i class="fas fa-edit"></i> Редактировать
+        </button>
+    </div>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
